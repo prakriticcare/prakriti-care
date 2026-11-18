@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173f2b">
+  <title>প্রাকৃতি কেয়ার | Prakriti Care</title>
+  <meta name="description" content="প্রাকৃতি কেয়ার — খাঁটি মধু, হানি নাট, খাঁটি খেজুরের গুড় ও প্রিমিয়াম খেজুর।">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,sans-serif;background:#fffdf5;color:#26372a;line-height:1.6}
+    header{background:#173f2b;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .brand{font-size:25px;font-weight:bold}
+    nav a{color:white;text-decoration:none;margin:0 9px}
+    button,.btn{background:#d6a83e;color:#173f2b;border:0;padding:11px 18px;border-radius:7px;font-weight:bold;cursor:pointer;text-decoration:none}
+    .hero{padding:85px 7%;text-align:center;background:linear-gradient(120deg,#e9efd9,#fff1cf)}
+    .hero h1{font-size:clamp(30px,5vw,52px);color:#173f2b;margin-bottom:14px}
+    .hero p{font-size:18px;margin-bottom:25px}
+    section{padding:55px 6%}
+    .section-title{text-align:center;color:#173f2b;font-size:30px;margin-bottom:28px}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+    .product{background:white;border:1px solid #e9e2d2;border-radius:12px;padding:22px;text-align:center}
+    .product .emoji{font-size:55px;margin-bottom:12px}
+    .product h3{color:#173f2b;margin-bottom:8px}
+    .product p{color:#687568;margin-bottom:12px}
+    .sizes{font-size:14px;margin-bottom:15px}
+    .about{background:#f1f0e4;text-align:center}
+    .contact{text-align:center}
+    footer{background:#173f2b;color:white;text-align:center;padding:25px}
+    @media(max-width:600px){nav{width:100%}nav a{margin:0 5px;font-size:14px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">🌿 প্রাকৃতি কেয়ার</div>
+  <nav>
+    <a href="#home" data-bn="হোম" data-en="Home">হোম</a>
+    <a href="#products" data-bn="পণ্য" data-en="Products">পণ্য</a>
+    <a href="#about" data-bn="আমাদের সম্পর্কে" data-en="About Us">আমাদের সম্পর্কে</a>
+    <a href="#contact" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</a>
+  </nav>
+  <button onclick="toggleLanguage()" id="language">English</button>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <h1 data-bn="প্রকৃতির বিশুদ্ধ স্বাদ, আপনার পরিবারের জন্য"
+        data-en="Nature's Pure Taste for Your Family">
+      প্রকৃতির বিশুদ্ধ স্বাদ, আপনার পরিবারের জন্য
+    </h1>
+    <p data-bn="খাঁটি ও প্রাকৃতিক খাবারের বিশ্বস্ত ঠিকানা — প্রাকৃতি কেয়ার"
+       data-en="Your trusted destination for pure and natural foods — Prakriti Care">
+      খাঁটি ও প্রাকৃতিক খাবারের বিশ্বস্ত ঠিকানা — প্রাকৃতি কেয়ার
+    </p>
+    <a href="#products" class="btn" data-bn="পণ্য দেখুন" data-en="Explore Products">পণ্য দেখুন</a>
+  </section>
+
+  <section id="products">
+    <h2 class="section-title" data-bn="আমাদের পণ্য" data-en="Our Products">আমাদের পণ্য</h2>
+    <div class="products">
+      <article class="product">
+        <div class="emoji">🍯</div>
+        <h3 data-bn="খাঁটি মধু" data-en="Pure Honey">খাঁটি মধু</h3>
+        <p data-bn="প্রাকৃতিক মধুর স্বাদ" data-en="The taste of natural honey">প্রাকৃতিক মধুর স্বাদ</p>
+        <div class="sizes">250g · 500g · 1kg</div>
+      </article>
+      <article class="product">
+        <div class="emoji">🥜</div>
+        <h3 data-bn="হানি নাট" data-en="Honey Nuts">হানি নাট</h3>
+        <p data-bn="মধু ও বাদামের সমন্বয়" data-en="A blend of honey and nuts">মধু ও বাদামের সমন্বয়</p>
+        <div class="sizes">500g · 1kg</div>
+      </article>
+      <article class="product">
+        <div class="emoji">🍮</div>
+        <h3 data-bn="খাঁটি খেজুরের গুড়" data-en="Pure Date Palm Jaggery">খাঁটি খেজুরের গুড়</h3>
+        <p data-bn="খেজুরের রস থেকে তৈরি" data-en="Made from date palm sap">খেজুরের রস থেকে তৈরি</p>
+        <div class="sizes">500g · 1kg · 2kg</div>
+      </article>
+      <article class="product">
+        <div class="emoji">🌴</div>
+        <h3 data-bn="প্রিমিয়াম খেজুর" data-en="Premium Dates">প্রিমিয়াম খেজুর</h3>
+        <p data-bn="বাছাই করা উন্নত মানের খেজুর" data-en="Carefully selected premium dates">বাছাই করা উন্নত মানের খেজুর</p>
+        <div class="sizes">250g · 500g · 1kg · 2kg</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title" data-bn="আমাদের সম্পর্কে" data-en="About Us">আমাদের সম্পর্কে</h2>
+    <p data-bn="প্রাকৃতি কেয়ার প্রাকৃতিক ও মানসম্মত খাবার আপনার পরিবারের কাছে পৌঁছে দেওয়ার একটি উদ্যোগ।"
+       data-en="Prakriti Care is dedicated to bringing natural and quality foods to your family.">
+      প্রাকৃতি কেয়ার প্রাকৃতিক ও মানসম্মত খাবার আপনার পরিবারের কাছে পৌঁছে দেওয়ার একটি উদ্যোগ।
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2 class="section-title" data-bn="যোগাযোগ করুন" data-en="Contact Us">যোগাযোগ করুন</h2>
+    <p data-bn="অর্ডার ও তথ্যের জন্য আমাদের সঙ্গে যোগাযোগ করুন।"
+       data-en="Contact us for orders and information.">
+      অর্ডার ও তথ্যের জন্য আমাদের সঙ্গে যোগাযোগ করুন।
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Prakriti Care. All rights reserved.</p>
+</footer>
+
+<script>
+  let currentLanguage = "bn";
+
+  function toggleLanguage(){
+    currentLanguage = currentLanguage === "bn" ? "en" : "bn";
+    document.documentElement.lang = currentLanguage;
+
+    document.querySelectorAll("[data-bn]").forEach(element => {
+      element.textContent = element.dataset[currentLanguage];
+    });
+
+    document.getElementById("language").textContent =
+      currentLanguage === "bn" ? "English" : "বাংলা";
+  }
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+ 

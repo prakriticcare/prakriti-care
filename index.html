@@ -1,129 +1,35 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#173f2b">
-  <title>প্রাকৃতি কেয়ার | Prakriti Care</title>
-  <meta name="description" content="প্রাকৃতি কেয়ার — খাঁটি মধু, হানি নাট, খাঁটি খেজুরের গুড় ও প্রিমিয়াম খেজুর।">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,sans-serif;background:#fffdf5;color:#26372a;line-height:1.6}
-    header{background:#173f2b;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-    .brand{font-size:25px;font-weight:bold}
-    nav a{color:white;text-decoration:none;margin:0 9px}
-    button,.btn{background:#d6a83e;color:#173f2b;border:0;padding:11px 18px;border-radius:7px;font-weight:bold;cursor:pointer;text-decoration:none}
-    .hero{padding:85px 7%;text-align:center;background:linear-gradient(120deg,#e9efd9,#fff1cf)}
-    .hero h1{font-size:clamp(30px,5vw,52px);color:#173f2b;margin-bottom:14px}
-    .hero p{font-size:18px;margin-bottom:25px}
-    section{padding:55px 6%}
-    .section-title{text-align:center;color:#173f2b;font-size:30px;margin-bottom:28px}
-    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-    .product{background:white;border:1px solid #e9e2d2;border-radius:12px;padding:22px;text-align:center}
-    .product .emoji{font-size:55px;margin-bottom:12px}
-    .product h3{color:#173f2b;margin-bottom:8px}
-    .product p{color:#687568;margin-bottom:12px}
-    .sizes{font-size:14px;margin-bottom:15px}
-    .about{background:#f1f0e4;text-align:center}
-    .contact{text-align:center}
-    footer{background:#173f2b;color:white;text-align:center;padding:25px}
-    @media(max-width:600px){nav{width:100%}nav a{margin:0 5px;font-size:14px}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#173f2b">
+<title>প্রাকৃতি কেয়ার | Prakriti Care</title>
+<meta name="description" content="প্রাকৃতি কেয়ার — প্রকৃতির বিশুদ্ধতা, প্রতিটি পণ্যে আস্থার ছোঁয়া। খাঁটি মধু, হানি নাট, খেজুরের গুড়, প্রিমিয়াম খেজুর ও চাকসহ মধু।">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#173f2b;--green2:#24583b;--gold:#d7aa45;--cream:#fbf8ef;--ink:#25352b;--muted:#718075;--line:#e9e3d5;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Hind Siliguri',sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.topline{background:var(--green);color:#f8edce;text-align:center;padding:7px 14px;font-size:13px;letter-spacing:.2px}.header{position:sticky;top:0;z-index:20;background:#fffdf8ee;backdrop-filter:blur(12px);border-bottom:1px solid #e9e3d5}.navwrap{max-width:1180px;margin:auto;padding:10px 22px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand img{width:185px;height:64px;object-fit:contain;display:block}.nav{display:flex;align-items:center;gap:27px;font-weight:600;color:#36513d}.nav a:hover{color:#b08326}.navright{display:flex;align-items:center;gap:10px}.lang{border:1px solid var(--line);background:white;border-radius:30px;padding:8px 13px;font:600 13px inherit;color:var(--green);cursor:pointer}.orderbtn,.goldbtn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#203b29;border:0;border-radius:30px;padding:12px 22px;font:700 15px 'Hind Siliguri';cursor:pointer;box-shadow:0 7px 18px #b68a3030;transition:.2s}.orderbtn:hover,.goldbtn:hover{transform:translateY(-2px);background:#e4bd64}.hero{max-width:1180px;margin:28px auto 0;padding:0 22px}.hero-inner{position:relative;overflow:hidden;min-height:450px;border-radius:28px;background:linear-gradient(105deg,#f5f0df 0%,#f5f0dfeb 44%,#f5f0df35 100%),url('assets/brand-banner.png') center right/cover no-repeat;display:flex;align-items:center;padding:65px 7%;box-shadow:0 18px 50px #233d2812}.hero-copy{max-width:540px;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#8b6b27;font-size:14px;font-weight:700;letter-spacing:.5px}.eyebrow:before{content:'';width:28px;height:1px;background:var(--gold)}h1{font-size:clamp(34px,5vw,58px);line-height:1.2;color:var(--green);margin:16px 0}.hero p{font-size:18px;color:#5f6c5f;margin:0 0 27px;max-width:440px}.tagline{font-size:14px;color:#7b6a45;margin-top:17px}.section{max-width:1180px;margin:auto;padding:76px 22px}.sectionhead{text-align:center;margin-bottom:34px}.kicker{color:#aa812e;font-weight:700;font-size:14px}.sectionhead h2{font-size:clamp(28px,4vw,39px);color:var(--green);margin:5px 0}.sectionhead p{margin:0;color:var(--muted)}.products{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:17px}.product{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 9px 24px #263a2609;transition:.25s;display:flex;flex-direction:column}.product:hover{transform:translateY(-5px);box-shadow:0 16px 32px #263a2617}.photo{height:205px;background:#f0ead9;display:flex;align-items:center;justify-content:center;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover}.photo.placeholder{background:radial-gradient(circle at 50% 45%,#f9e8b7,#e9d9a9 65%,#d9c58e);font-size:74px}.productbody{padding:17px;display:flex;flex-direction:column;flex:1}.product h3{font-size:19px;color:var(--green);margin:0 0 4px}.product p{font-size:13px;color:var(--muted);margin:0 0 12px;min-height:42px}.sizes{font-size:12px;color:#8b7137;background:#faf6e9;border-radius:8px;padding:7px 9px;margin-bottom:13px}.product .goldbtn{width:100%;margin-top:auto;padding:10px 12px;font-size:14px}.about{background:#eef0e5;border-radius:24px;padding:42px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}.about h2{font-size:32px;color:var(--green);margin:5px 0 12px}.about p{color:#637165;margin:0}.promise{display:grid;grid-template-columns:1fr 1fr;gap:12px}.promise div{background:#fffdf7;border:1px solid #e6e5d8;border-radius:14px;padding:16px;color:#405744;font-weight:600}.promise span{display:block;font-size:25px;margin-bottom:4px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.gallery img{width:100%;height:230px;object-fit:cover;border-radius:16px;border:1px solid var(--line)}.footer{background:var(--green);color:#f5f1e4;padding:38px 22px 22px;margin-top:25px}.footwrap{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}.footer img{width:160px;height:62px;object-fit:contain;background:#fff;border-radius:10px;padding:4px}.footer p{font-size:14px;color:#d5dfd2}.copyright{text-align:center;border-top:1px solid #ffffff26;margin:25px auto 0;padding-top:17px;color:#cbd7cb;font-size:12px}.wa-float{position:fixed;right:20px;bottom:20px;z-index:30;background:#168b4b;color:white;border-radius:50px;padding:13px 18px;font-weight:700;box-shadow:0 8px 24px #0003}.wa-float span{margin-right:7px}.note{font-size:12px;color:#8a8d7f;margin-top:10px}
+@media(max-width:1000px){.products{grid-template-columns:repeat(3,1fr)}.nav{gap:14px}.hero-inner{background-position:62% center}.hero-copy{max-width:460px}}
+@media(max-width:680px){.navwrap{padding:8px 14px;flex-wrap:wrap}.brand img{width:145px;height:52px}.nav{order:3;width:100%;justify-content:center;gap:18px;font-size:14px;padding:4px 0 7px}.navright{margin-left:auto}.navright .orderbtn{display:none}.hero{padding:0 12px;margin-top:14px}.hero-inner{min-height:440px;padding:38px 25px;align-items:flex-start;background:linear-gradient(90deg,#f5f0e9f5,#f5f0e9d9 55%,#f5f0e94d),url('assets/brand-banner.png') 58% center/cover}.hero-copy{max-width:100%}.hero p{font-size:16px}.section{padding:55px 14px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.photo{height:165px}.productbody{padding:13px}.product h3{font-size:17px}.product p{font-size:12px;min-height:50px}.about{grid-template-columns:1fr;padding:25px 20px;gap:22px}.about h2{font-size:27px}.gallery{grid-template-columns:1fr 1fr}.gallery img{height:170px}.footwrap{flex-direction:column;text-align:center}.wa-float{right:12px;bottom:12px;padding:11px 15px;font-size:14px}}
+@media(max-width:380px){.products{grid-template-columns:1fr}.photo{height:210px}}
+</style>
 </head>
 <body>
-<header>
-  <div class="brand">🌿 প্রাকৃতি কেয়ার</div>
-  <nav>
-    <a href="#home" data-bn="হোম" data-en="Home">হোম</a>
-    <a href="#products" data-bn="পণ্য" data-en="Products">পণ্য</a>
-    <a href="#about" data-bn="আমাদের সম্পর্কে" data-en="About Us">আমাদের সম্পর্কে</a>
-    <a href="#contact" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</a>
-  </nav>
-  <button onclick="toggleLanguage()" id="language">English</button>
-</header>
-
-<main>
-  <section class="hero" id="home">
-    <h1 data-bn="প্রকৃতির বিশুদ্ধ স্বাদ, আপনার পরিবারের জন্য"
-        data-en="Nature's Pure Taste for Your Family">
-      প্রকৃতির বিশুদ্ধ স্বাদ, আপনার পরিবারের জন্য
-    </h1>
-    <p data-bn="খাঁটি ও প্রাকৃতিক খাবারের বিশ্বস্ত ঠিকানা — প্রাকৃতি কেয়ার"
-       data-en="Your trusted destination for pure and natural foods — Prakriti Care">
-      খাঁটি ও প্রাকৃতিক খাবারের বিশ্বস্ত ঠিকানা — প্রাকৃতি কেয়ার
-    </p>
-    <a href="#products" class="btn" data-bn="পণ্য দেখুন" data-en="Explore Products">পণ্য দেখুন</a>
-  </section>
-
-  <section id="products">
-    <h2 class="section-title" data-bn="আমাদের পণ্য" data-en="Our Products">আমাদের পণ্য</h2>
-    <div class="products">
-      <article class="product">
-        <div class="emoji">🍯</div>
-        <h3 data-bn="খাঁটি মধু" data-en="Pure Honey">খাঁটি মধু</h3>
-        <p data-bn="প্রাকৃতিক মধুর স্বাদ" data-en="The taste of natural honey">প্রাকৃতিক মধুর স্বাদ</p>
-        <div class="sizes">250g · 500g · 1kg</div>
-      </article>
-      <article class="product">
-        <div class="emoji">🥜</div>
-        <h3 data-bn="হানি নাট" data-en="Honey Nuts">হানি নাট</h3>
-        <p data-bn="মধু ও বাদামের সমন্বয়" data-en="A blend of honey and nuts">মধু ও বাদামের সমন্বয়</p>
-        <div class="sizes">500g · 1kg</div>
-      </article>
-      <article class="product">
-        <div class="emoji">🍮</div>
-        <h3 data-bn="খাঁটি খেজুরের গুড়" data-en="Pure Date Palm Jaggery">খাঁটি খেজুরের গুড়</h3>
-        <p data-bn="খেজুরের রস থেকে তৈরি" data-en="Made from date palm sap">খেজুরের রস থেকে তৈরি</p>
-        <div class="sizes">500g · 1kg · 2kg</div>
-      </article>
-      <article class="product">
-        <div class="emoji">🌴</div>
-        <h3 data-bn="প্রিমিয়াম খেজুর" data-en="Premium Dates">প্রিমিয়াম খেজুর</h3>
-        <p data-bn="বাছাই করা উন্নত মানের খেজুর" data-en="Carefully selected premium dates">বাছাই করা উন্নত মানের খেজুর</p>
-        <div class="sizes">250g · 500g · 1kg · 2kg</div>
-      </article>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <h2 class="section-title" data-bn="আমাদের সম্পর্কে" data-en="About Us">আমাদের সম্পর্কে</h2>
-    <p data-bn="প্রাকৃতি কেয়ার প্রাকৃতিক ও মানসম্মত খাবার আপনার পরিবারের কাছে পৌঁছে দেওয়ার একটি উদ্যোগ।"
-       data-en="Prakriti Care is dedicated to bringing natural and quality foods to your family.">
-      প্রাকৃতি কেয়ার প্রাকৃতিক ও মানসম্মত খাবার আপনার পরিবারের কাছে পৌঁছে দেওয়ার একটি উদ্যোগ।
-    </p>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2 class="section-title" data-bn="যোগাযোগ করুন" data-en="Contact Us">যোগাযোগ করুন</h2>
-    <p data-bn="অর্ডার ও তথ্যের জন্য আমাদের সঙ্গে যোগাযোগ করুন।"
-       data-en="Contact us for orders and information.">
-      অর্ডার ও তথ্যের জন্য আমাদের সঙ্গে যোগাযোগ করুন।
-    </p>
-  </section>
-</main>
-
-<footer>
-  <p>© <span id="year"></span> Prakriti Care. All rights reserved.</p>
-</footer>
-
+<div class="topline" data-bn="প্রকৃতির বিশুদ্ধতা, প্রতিটি পণ্যে আস্থার ছোঁয়া।" data-en="Pure Nature, Trusted Quality.">প্রকৃতির বিশুদ্ধতা, প্রতিটি পণ্যে আস্থার ছোঁয়া।</div>
+<header class="header"><div class="navwrap"><a class="brand" href="#home" aria-label="Prakriti Care"><img src="assets/logo.png" alt="প্রাকৃতি কেয়ার লোগো"></a><nav class="nav"><a href="#home" data-bn="হোম" data-en="Home">হোম</a><a href="#products" data-bn="পণ্যসমূহ" data-en="Products">পণ্যসমূহ</a><a href="#about" data-bn="আমাদের কথা" data-en="About">আমাদের কথা</a><a href="#gallery" data-bn="গ্যালারি" data-en="Gallery">গ্যালারি</a></nav><div class="navright"><button class="lang" id="language" onclick="toggleLanguage()">English</button><a class="orderbtn" href="#products" data-bn="অর্ডার করুন" data-en="Order Now">অর্ডার করুন</a></div></div></header>
+<main><section class="hero" id="home"><div class="hero-inner"><div class="hero-copy"><div class="eyebrow" data-bn="প্রকৃতির কাছ থেকে, আপনার পরিবারের জন্য" data-en="From nature, for your family">প্রকৃতির কাছ থেকে, আপনার পরিবারের জন্য</div><h1 data-bn="প্রকৃতির বিশুদ্ধ স্বাদ, প্রতিদিনের আয়োজনে" data-en="Nature’s Pure Goodness, Every Day">প্রকৃতির বিশুদ্ধ স্বাদ, প্রতিদিনের আয়োজনে</h1><p data-bn="খাঁটি মধু থেকে প্রিমিয়াম খেজুর—বিশুদ্ধতা ও যত্নের সমন্বয়ে বেছে নিন আপনার পছন্দের পণ্য।" data-en="From pure honey to premium dates—choose your favourites, selected with care and a focus on quality.">খাঁটি মধু থেকে প্রিমিয়াম খেজুর—বিশুদ্ধতা ও যত্নের সমন্বয়ে বেছে নিন আপনার পছন্দের পণ্য।</p><a class="goldbtn" href="#products" data-bn="আমাদের পণ্য দেখুন　→" data-en="Explore Products　→">আমাদের পণ্য দেখুন　→</a><div class="tagline">Pure Nature, Trusted Quality.</div></div></div></section>
+<section class="section" id="products"><div class="sectionhead"><div class="kicker" data-bn="আমাদের সংগ্রহ" data-en="OUR COLLECTION">আমাদের সংগ্রহ</div><h2 data-bn="প্রাকৃতিক পণ্যের সম্ভার" data-en="A Collection of Nature’s Goodness">প্রাকৃতিক পণ্যের সম্ভার</h2><p data-bn="আপনার পছন্দের পণ্যটি বেছে নিয়ে WhatsApp-এ অর্ডার করুন।" data-en="Choose your favourite product and order on WhatsApp.">আপনার পছন্দের পণ্যটি বেছে নিয়ে WhatsApp-এ অর্ডার করুন।</p></div>
+<div class="products">
+<article class="product"><div class="photo placeholder">🍯</div><div class="productbody"><h3 data-bn="খাঁটি মধু" data-en="Pure Honey">খাঁটি মধু</h3><p data-bn="প্রকৃতির মিষ্টি উপহার, যত্নে সংগ্রহ করা।" data-en="Nature’s sweet gift, carefully selected.">প্রকৃতির মিষ্টি উপহার, যত্নে সংগ্রহ করা।</p><div class="sizes">250g · 500g · 1kg</div><button class="goldbtn" onclick="order('খাঁটি মধু')" data-bn="অর্ডার করুন" data-en="Order">অর্ডার করুন</button></div></article>
+<article class="product"><div class="photo"><img src="assets/honey-nuts.jpeg" alt="হানি নাট"></div><div class="productbody"><h3 data-bn="হানি নাট" data-en="Honey Nuts">হানি নাট</h3><p data-bn="মধু ও নানা বাদামের মজাদার সমন্বয়।" data-en="A delicious blend of honey and nuts.">মধু ও নানা বাদামের মজাদার সমন্বয়।</p><div class="sizes">500g · 1kg</div><button class="goldbtn" onclick="order('হানি নাট')" data-bn="অর্ডার করুন" data-en="Order">অর্ডার করুন</button></div></article>
+<article class="product"><div class="photo placeholder">🍯</div><div class="productbody"><h3 data-bn="খাঁটি খেজুরের গুড়" data-en="Pure Date Palm Jaggery">খাঁটি খেজুরের গুড়</h3><p data-bn="খেজুরের রসের ঐতিহ্যবাহী মিষ্টি স্বাদ।" data-en="Traditional sweetness from date palm sap.">খেজুরের রসের ঐতিহ্যবাহী মিষ্টি স্বাদ।</p><div class="sizes">500g · 1kg · 2kg</div><button class="goldbtn" onclick="order('খাঁটি খেজুরের গুড়')" data-bn="অর্ডার করুন" data-en="Order">অর্ডার করুন</button></div></article>
+<article class="product"><div class="photo placeholder">🌴</div><div class="productbody"><h3 data-bn="প্রিমিয়াম খেজুর" data-en="Premium Dates">প্রিমিয়াম খেজুর</h3><p data-bn="বাছাই করা খেজুর, স্বাদে ও মানে অনন্য।" data-en="Carefully selected dates with delightful taste.">বাছাই করা খেজুর, স্বাদে ও মানে অনন্য।</p><div class="sizes">250g · 500g · 1kg · 2kg</div><button class="goldbtn" onclick="order('প্রিমিয়াম খেজুর')" data-bn="অর্ডার করুন" data-en="Order">অর্ডার করুন</button></div></article>
+<article class="product"><div class="photo"><img src="assets/honeycomb-1.jpeg" alt="চাকসহ মধু"></div><div class="productbody"><h3 data-bn="চাকসহ খাঁটি মধু" data-en="Pure Honeycomb Honey">চাকসহ খাঁটি মধু</h3><p data-bn="প্রাকৃতিক মধুর সঙ্গে মধুচাকের স্বাদ।" data-en="The goodness of honey with its natural honeycomb.">প্রাকৃতিক মধুর সঙ্গে মধুচাকের স্বাদ।</p><div class="sizes">500g · 1kg</div><button class="goldbtn" onclick="order('চাকসহ খাঁটি মধু')" data-bn="অর্ডার করুন" data-en="Order">অর্ডার করুন</button></div></article>
+</div><p class="note" data-bn="নোট: যেসব পণ্যে আপনার নিজস্ব ছবি পাওয়া যায়নি, সেগুলোতে আপাতত প্রতীকী ছবি রাখা হয়েছে।" data-en="Note: Illustrative placeholders are used for products without supplied photos.">নোট: যেসব পণ্যে আপনার নিজস্ব ছবি পাওয়া যায়নি, সেগুলোতে আপাতত প্রতীকী ছবি রাখা হয়েছে।</p></section>
+<section class="section" id="about"><div class="about"><div><div class="kicker" data-bn="আমাদের গল্প" data-en="OUR STORY">আমাদের গল্প</div><h2 data-bn="বিশুদ্ধতার প্রতি যত্ন, আস্থার সঙ্গে" data-en="Care for Purity, Built on Trust">বিশুদ্ধতার প্রতি যত্ন, আস্থার সঙ্গে</h2><p data-bn="প্রাকৃতি কেয়ার-এর লক্ষ্য হলো প্রাকৃতিক ও মানসম্মত খাবার আপনার পরিবারের কাছে পৌঁছে দেওয়া। প্রতিটি পণ্য বেছে নেওয়ার ক্ষেত্রে আমরা গুরুত্ব দিই গুণমান, সততা ও গ্রাহকের আস্থাকে।" data-en="Prakriti Care aims to bring natural, quality foods to your family. We value quality, honesty and your trust in every product we offer.">প্রাকৃতি কেয়ার-এর লক্ষ্য হলো প্রাকৃতিক ও মানসম্মত খাবার আপনার পরিবারের কাছে পৌঁছে দেওয়া। প্রতিটি পণ্য বেছে নেওয়ার ক্ষেত্রে আমরা গুরুত্ব দিই গুণমান, সততা ও গ্রাহকের আস্থাকে।</p></div><div class="promise"><div><span>🌿</span><b data-bn="প্রাকৃতিক পণ্যের যত্ন" data-en="Thoughtful Selection">প্রাকৃতিক পণ্যের যত্ন</b></div><div><span>🤎</span><b data-bn="বিশ্বাসকে গুরুত্ব" data-en="Trust Matters">বিশ্বাসকে গুরুত্ব</b></div><div><span>📦</span><b data-bn="সারা বাংলাদেশে ডেলিভারি" data-en="Delivery Across Bangladesh">সারা বাংলাদেশে ডেলিভারি</b></div><div><span>✨</span><b data-bn="মানের প্রতি অঙ্গীকার" data-en="Committed to Quality">মানের প্রতি অঙ্গীকার</b></div></div></div></section>
+<section class="section" id="gallery"><div class="sectionhead"><div class="kicker" data-bn="আমাদের পণ্যের ঝলক" data-en="A CLOSER LOOK">আমাদের পণ্যের ঝলক</div><h2 data-bn="ছবিতে প্রাকৃতি কেয়ার" data-en="Prakriti Care in Pictures">ছবিতে প্রাকৃতি কেয়ার</h2></div><div class="gallery"><img src="assets/honey-nuts.jpeg" alt="হানি নাটের ছবি"><img src="assets/honeycomb-1.jpeg" alt="মধুচাকের ছবি"><img src="assets/honeycomb-2.jpeg" alt="মধুচাকের আরেকটি ছবি"></div></section></main>
+<footer class="footer"><div class="footwrap"><img src="assets/logo.png" alt="প্রাকৃতি কেয়ার"><div><strong>প্রাকৃতি কেয়ার | Prakriti Care</strong><p data-bn="প্রকৃতির বিশুদ্ধতা, প্রতিটি পণ্যে আস্থার ছোঁয়া।" data-en="Pure Nature, Trusted Quality.">প্রকৃতির বিশুদ্ধতা, প্রতিটি পণ্যে আস্থার ছোঁয়া।</p></div><a class="goldbtn" href="#products" data-bn="পণ্য দেখুন" data-en="Shop Products">পণ্য দেখুন</a></div><div class="copyright">© <span id="year"></span> Prakriti Care. All rights reserved.</div></footer>
+<a class="wa-float" href="https://wa.me/8801645953909?text=আসসালামু%20আলাইকুম%2C%20আমি%20প্রাকৃতি%20কেয়ারের%20পণ্য%20অর্ডার%20করতে%20চাই।" target="_blank" rel="noopener"><span>◉</span><span data-bn="WhatsApp অর্ডার" data-en="WhatsApp Order">WhatsApp অর্ডার</span></a>
 <script>
-  let currentLanguage = "bn";
-
-  function toggleLanguage(){
-    currentLanguage = currentLanguage === "bn" ? "en" : "bn";
-    document.documentElement.lang = currentLanguage;
-
-    document.querySelectorAll("[data-bn]").forEach(element => {
-      element.textContent = element.dataset[currentLanguage];
-    });
-
-    document.getElementById("language").textContent =
-      currentLanguage === "bn" ? "English" : "বাংলা";
-  }
-
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-</body>
-</html>
- 
+let lang='bn';function toggleLanguage(){lang=lang==='bn'?'en':'bn';document.documentElement.lang=lang;document.querySelectorAll('[data-bn]').forEach(el=>{el.textContent=el.dataset[lang]});document.getElementById('language').textContent=lang==='bn'?'English':'বাংলা'}
+function order(product){const msg=`আসসালামু আলাইকুম, আমি ${product} অর্ডার করতে চাই। অনুগ্রহ করে সাইজ, মূল্য ও অর্ডারের বিস্তারিত জানাবেন।`;window.open('https://wa.me/8801645953909?text='+encodeURIComponent(msg),'_blank','noopener')}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script></body></html>
